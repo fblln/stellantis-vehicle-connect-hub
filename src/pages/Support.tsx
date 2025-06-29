@@ -233,7 +233,7 @@ const Support = () => {
                   <div className="text-sm text-purple-700">Phone Support</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-purple-600">< 1hr</div>
+                  <div className="text-2xl font-bold text-purple-600">&lt; 1hr</div>
                   <div className="text-sm text-purple-700">Response Time</div>
                 </div>
                 <div className="text-center">
