@@ -7,7 +7,7 @@ import { Copy, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface CodeBlockProps {
-  code: string;
+  code?: string;
   language?: string;
   title?: string;
   multiLanguage?: {
@@ -15,7 +15,7 @@ interface CodeBlockProps {
   };
 }
 
-export function CodeBlock({ code, language = "javascript", title, multiLanguage }: CodeBlockProps) {
+export function CodeBlock({ code = "", language = "javascript", title, multiLanguage }: CodeBlockProps) {
   const [copied, setCopied] = useState(false);
 
   const copyToClipboard = async (text: string) => {
